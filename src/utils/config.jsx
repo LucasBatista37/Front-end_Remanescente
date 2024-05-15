@@ -4,6 +4,8 @@ export const uploads = "https://back-end-remanescent.onrender.com/uploads";
 export const requestConfig = (method, data, token = null, image = null) => {
   let config;
 
+//conexao
+
   if (image) {
     config = {
       method: method,
