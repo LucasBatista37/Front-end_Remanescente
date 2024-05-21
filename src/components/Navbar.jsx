@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <nav id="nav">
-      <Link to="/">Instagram 2</Link>
+      <Link to="/">RemanescenteGram</Link>
       <form id="search-form" onSubmit={handleSearch}>
         <BsSearch />
         <input type="text" placeholder="Pesquisar" onChange={(e) => setQuery(e.target.value)}/>

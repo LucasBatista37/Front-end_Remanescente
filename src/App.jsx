@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useState } from 'react';
 
 //Router
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -18,9 +19,11 @@ import EditProfile from "./pages/EditProfile/EditProfile";
 import Profile from "./pages/Profile/Profile";
 import Photo from "./pages/Photo/Photo";
 import Search from "./pages/Search/Search";
+import TermsOfService from "./components/TermsOfService";
 
 function App() {
   const { auth, loading } = useAuth();
+  const [showTerms, setShowTerms] = useState(true); // Altere para true para mostrar os termos
 
   if (loading) {
     return <p>Carregando...</p>;
@@ -31,6 +34,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <div className="container">
+        {showTerms && <TermsOfService onClose={() => setShowTerms(false)} />}
           <Routes>
             <Route
               path="/"

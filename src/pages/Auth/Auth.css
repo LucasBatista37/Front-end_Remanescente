@@ -1,39 +1,41 @@
 #login,
 #register {
-    border: 1px solid #363636;
-    background-color: #000;
-    padding: 1.5em 2em;
-    max-width: 33%;
-    margin: 2em auto;
+  border: 1px solid #ccc; /* Ajustando a cor da borda para uma tonalidade mais clara */
+  background-color: #f2f2f2; /* Fundo mais claro para melhor contraste com o texto */
+  padding: 2em; /* Aumentando um pouco o padding */
+  max-width: 50%; /* Reduzindo um pouco a largura máxima */
+  margin: 2em auto;
 }
 
 #login h2,
 #register h2 {
-    text-align: center;
-    font-size: 2.1em;
-    margin-top: 0;
+  text-align: center;
+  font-size: 2.1em;
+  margin-top: 0;
+  color: #333; /* Cor do texto mais escuro para maior legibilidade */
 }
 
-.subtitle{
-    font-weight: bold;
-    color: #999;
-    margin-bottom: 1.5em;
+.subtitle {
+  font-weight: bold;
+  color: #666; /* Tonalidade de cinza mais suave para o subtítulo */
+  margin-bottom: 1.5em;
 }
 
 #login form,
 #register form {
-    padding: 1.5em;
-    margin-bottom: 1.5em;
-    border-bottom: 1px solid #363636;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #ccc; /* Ajustando a cor da borda para uma tonalidade mais clara */
 }
 
 #login p,
 #register p {
-    text-align: center;
+  text-align: center;
+  color: #666; /* Cor do texto mais escuro para maior legibilidade */
 }
 
 #login p a,
 #register p a {
-    font-weight: bold;
-    color: #0094F6;
+  font-weight: bold;
+  color: #007bff; /* Cor azul para links */
 }

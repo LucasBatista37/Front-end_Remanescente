@@ -88,7 +88,7 @@ const Profile = () => {
     <div id="edit-profile">
       <h2>Edite seus dados</h2>
       <p className="subtitle">
-        Adicione uma imagem de perfil, e conte mais um pouco sobre você...
+        Adicione uma imagem de perfil, e adicione a bio...
       </p>
       {(user.profileImage || previewImage) && (
         <img

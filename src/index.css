@@ -3,12 +3,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #121212;
-  color: #fafafa;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
 a {
-  color: #fafafa;
+  color: #333;
   text-decoration: none;
 }
 
@@ -34,35 +34,35 @@ label {
 label span {
   font-weight: bold;
   margin-bottom: .5em;
-  color: #AAA;
-  font-size: .7em;
+  color: #666;
+  font-size: .8em;
 }
 
 input {
-  background-color: #3b3b3b;
-  color: #AAA;
-  border: 1px solid #555;
-  border-radius: 2px;
-  padding: 10px 8px;
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 12px;
   outline: none;
   margin-bottom: .6em;
 }
 
 input::placeholder {
-  color: #aaa;
+  color: #999;
 }
 
 .btn,
 button,
 input[type="submit"] {
-  background-color: #0094f6;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding: 10px 8px;
+  padding: 12px 20px;
   font-weight: bold;
   cursor: pointer;
-  opacity: .8;
+  opacity: .9;
   font-size: 1em;
 }
 
@@ -72,7 +72,7 @@ input[type="submit"] {
 
 input:disabled {
   cursor: not-allowed;
-  background-color: #000;
+  background-color: #ccc;
 }
 
 button:hover,
