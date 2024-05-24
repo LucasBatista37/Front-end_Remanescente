@@ -45,7 +45,9 @@ const Navbar = () => {
 
   return (
     <nav id="nav">
-      <Link to="/">RemanescenteGram</Link>
+      <Link to="/">
+        <img src="../remanetLogo.png" alt="Logo" id="nav-logo"/>
+      </Link>
       <form id="search-form" onSubmit={handleSearch}>
         <BsSearch />
         <input type="text" placeholder="Pesquisar" onChange={(e) => setQuery(e.target.value)}/>

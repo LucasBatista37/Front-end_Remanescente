@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0b0cc3; 
-  border-bottom: 1px solid #363636;
-  padding: 0.5em 1em; 
-  color: #fff; 
+  background-color: #4682B4; /* Azul Médio para Contraste */
+  border-bottom: 1px solid #D3D3D3; /* Cinza Médio para Bordas e Separadores */
+  padding: 0.5em 1em;
+  color: #fff;
 }
 
 #search-form {
   position: relative;
-  width: 25%; 
+  width: 25%;
 }
 
 #search-form svg {
@@ -18,7 +18,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
-  color: #888; 
+  color: #888;
 }
 
 #search-form input {
@@ -48,6 +48,11 @@
 }
 
 #nav a {
-  color: #fff; 
+  color: #fff;
+}
+
+#nav-logo {
+  height: 60px;
+  width: auto;
 }
 
