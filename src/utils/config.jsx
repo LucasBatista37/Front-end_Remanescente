@@ -1,5 +1,5 @@
-export const api = "https://front-end-remanescente.vercel.app/api";
-export const uploads = "https://front-end-remanescente.vercel.app/uploads" ;
+export const api = "https://backend-remanescente.onrender.com/api";
+export const uploads = "https://backend-remanescente.onrender.com/uploads" ;
 
 export const requestConfig = (method, data, token = null, image = null) => {
   let config;
