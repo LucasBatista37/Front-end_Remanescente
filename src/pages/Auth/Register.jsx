@@ -43,7 +43,7 @@ const Register = () => {
 
   return (
     <div id="register">
-      <h2>RemanescenteGram</h2>
+      <h2>REMANET</h2>
       <p className="subtitle">Cadastre-se para ver as fotos dos seus amigos</p>
       <form onSubmit={handleSubmit}>
         <input

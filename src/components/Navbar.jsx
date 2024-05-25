@@ -16,41 +16,45 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 // Redux
-import {logout, reset} from '../slices/authSlice'
+import { logout, reset } from "../slices/authSlice";
 
 const Navbar = () => {
   const { auth } = useAuth();
   const { user } = useSelector((state) => state.auth);
 
-  const [query, setQuery] = useState("")
+  const [query, setQuery] = useState("");
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const dispatch = useDispatch();
 
   const handleLogout = () => {
-    dispatch(logout())
-    dispatch(reset())
+    dispatch(logout());
+    dispatch(reset());
 
     navigate("/login");
-  }
+  };
 
   const handleSearch = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    if(query) {
+    if (query) {
       return navigate(`/search?q=${query}`);
     }
-  }
+  };
 
   return (
     <nav id="nav">
-      <Link to="/">
-        <img src="../remanetLogo.png" alt="Logo" id="nav-logo"/>
+      <Link to="/" className="navbar-title">
+        REMANET
       </Link>
       <form id="search-form" onSubmit={handleSearch}>
         <BsSearch />
-        <input type="text" placeholder="Pesquisar" onChange={(e) => setQuery(e.target.value)}/>
+        <input
+          type="text"
+          placeholder="Pesquisar"
+          onChange={(e) => setQuery(e.target.value)}
+        />
       </form>
       <ul id="nav-links">
         {auth ? (
@@ -61,19 +65,19 @@ const Navbar = () => {
               </NavLink>
             </li>
             {user && (
-                <li>
-                    <NavLink to={`/users/${user._id}`}>
-                        <BsFillCameraFill/>
-                    </NavLink>
-                </li>
+              <li>
+                <NavLink to={`/users/${user._id}`}>
+                  <BsFillCameraFill />
+                </NavLink>
+              </li>
             )}
             <li>
-                <NavLink to="/profile">
-                    <BsFillPersonFill/>
-                </NavLink>
+              <NavLink to="/profile">
+                <BsFillPersonFill />
+              </NavLink>
             </li>
             <li>
-                <span onClick={handleLogout}>Sair</span>
+              <span onClick={handleLogout}>Sair</span>
             </li>
           </>
         ) : (

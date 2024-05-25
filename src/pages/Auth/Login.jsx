@@ -36,7 +36,7 @@ const Login = () => {
 
   return (
     <div id="login">
-      <h2>RemanescenteGram</h2>
+      <h2>REMANET</h2>
       <p className="subtitle">Faça o login</p>
       <form onSubmit={handleSubmit}>
         <input
